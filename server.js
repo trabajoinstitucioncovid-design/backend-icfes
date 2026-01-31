@@ -17,7 +17,7 @@ const dbConnection = process.env.MONGO_URI || process.env.MONGODB_URI;
 // Middleware
 app.use(cors());
 app.use(express.json());
-app.use(express.static(__dirname)); // <--- ¡ESTA ES LA LÍNEA NUEVA!
+app.use(express.static('public')); // <--- ¡ESTA ES LA LÍNEA NUEVA!
 app.use(express.urlencoded({ extended: true }));
 
 // Conexión a MongoDB
