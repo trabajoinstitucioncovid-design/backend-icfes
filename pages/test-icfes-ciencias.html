@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test ICFES - Ciencias Naturales | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="area-salud" data-test="ciencias">
+
+  <header class="dashboard-header">
+    <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+    <div class="user-actions">
+      <a href="test-icfes.html" class="btn-outline-sm">← Volver</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="area-header">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2v2"/>
+          <path d="M12 20v2"/>
+          <rect x="4" y="6" width="16" height="12" rx="2"/>
+          <line x1="8" y1="12" x2="16" y2="12"/>
+        </svg>
+      </div>
+      <h1>Test ICFES - Ciencias Naturales</h1>
+      <p>5 preguntas para evaluar tu conocimiento científico.</p>
+    </section>
+
+    <form id="icfes-form">
+      <div class="form-group">
+        <p>1. ¿Qué es la fotosíntesis?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q1" value="0"> Respiración</label>
+          <label><input type="radio" name="q1" value="1"> Producción de alimento</label>
+          <label><input type="radio" name="q1" value="2"> Digestión</label>
+          <label><input type="radio" name="q1" value="3"> Circulación</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>2. ¿Qué planeta es el más grande?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q2" value="0"> Tierra</label>
+          <label><input type="radio" name="q2" value="1"> Marte</label>
+          <label><input type="radio" name="q2" value="2"> Júpiter</label>
+          <label><input type="radio" name="q2" value="3"> Saturno</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>3. ¿Qué es un átomo?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q3" value="0"> Partícula pequeña</label>
+          <label><input type="radio" name="q3" value="1"> Partícula grande</label>
+          <label><input type="radio" name="q3" value="2"> Partícula mediana</label>
+          <label><input type="radio" name="q3" value="3"> Partícula gigante</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>4. ¿Qué es la gravedad?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q4" value="0"> Fuerza de atracción</label>
+          <label><input type="radio" name="q4" value="1"> Fuerza de repulsión</label>
+          <label><input type="radio" name="q4" value="2"> Fuerza neutra</label>
+          <label><input type="radio" name="q4" value="3"> Fuerza magnética</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>5. ¿Qué es un ecosistema?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q5" value="0"> Comunidad de seres vivos</label>
+          <label><input type="radio" name="q5" value="1"> Comunidad de rocas</label>
+          <label><input type="radio" name="q5" value="2"> Comunidad de agua</label>
+          <label><input type="radio" name="q5" value="3"> Comunidad de aire</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar Respuestas</button>
+    </form>
+  </main>
+
+  <script src="../scripts/test-icfes.js"></script>
+</body>
+</html>

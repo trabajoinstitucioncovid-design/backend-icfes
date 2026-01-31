@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Resultados ICFES | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    /* Estilos mínimos locales para la estructura de tarjetas.
+       Mantén tus estilos globales en style.css; estos solo aseguran
+       que la página sea usable aunque style.css cambie. */
+    .container { max-width: 980px; margin: 32px auto; padding: 0 16px; }
+    .header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+    .cards { display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:16px; }
+    .card { background:#fff; border:1px solid #e6e6e6; border-radius:12px; padding:16px; box-shadow: 0 6px 18px rgba(0,0,0,0.03); }
+    .card h3 { margin:0 0 8px 0; font-size:16px; }
+    .pct { font-weight:700; font-size:20px; }
+    .progress { height:10px; background:#f1f1f1; border-radius:8px; overflow:hidden; margin-top:10px; }
+    .progress > span { display:block; height:100%; width:0%; transition: width .6s ease; }
+    .controls { margin-top:12px; display:flex; gap:8px; flex-wrap:wrap; }
+    .btn { padding:8px 12px; border-radius:8px; cursor:pointer; border:1px solid #ccc; background:#fff; text-decoration:none; color:#111; font-size:14px; }
+    .btn-primary { background:#1f73ff; color:#fff; border-color:transparent; box-shadow: none; }
+    .advice { margin-top:22px; padding:16px; border-radius:8px; background:#f7f9fc; border:1px solid #e9eef9; }
+    .small { font-size:13px; color:#666; }
+    .center { text-align:center; }
+    .muted { color:#777; }
+    .actions-top { display:flex; gap:8px; align-items:center; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <div>
+        <h1>Resultados — ICFES</h1>
+        <p class="small muted">Aquí verás el avance por cada prueba ICFES. Las tarjetas se actualizan cuando completas cada test.</p>
+      </div>
+
+      <div class="actions-top">
+        <a href="../dashboard.html" class="btn">← Dashboard</a>
+        <a href="../pages/test-icfes.html" class="btn">Ir a Test ICFES</a>
+        <button id="reset-icfes" class="btn">Restablecer ICFES</button>
+      </div>
+    </header>
+
+    <!-- Contenedor de tarjetas -->
+    <section id="cards-wrap" class="cards" aria-live="polite">
+      <!-- Las tarjetas se renderizan desde JS -->
+    </section>
+
+    <!-- Consejo dinámico -->
+    <section id="advice-wrap" class="advice" aria-live="polite">
+      <h3>Consejo académico</h3>
+      <p id="advice-text">Aún no has realizado las pruebas ICFES. Comienza cualquiera para ver resultados.</p>
+    </section>
+
+    <footer class="center" style="margin-top:18px;">
+      <p class="small muted">Los resultados se guardan localmente en tu navegador. Si te registras, se podrán guardar en tu cuenta (si tu backend lo soporta).</p>
+    </footer>
+  </div>
+
+  <script src="../scripts/resultados-icfes.js"></script>
+</body>
+</html>

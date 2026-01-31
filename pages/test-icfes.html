@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrenamiento ICFES | LUKXTEC</title>
+  
+  <link rel="stylesheet" href="../style.css">
+  
+  <style>
+    /* Estilos locales para ajustar la vista */
+    .dashboard-main {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-title h1 {
+        font-size: 2rem;
+        color: #1f2937;
+        margin-bottom: 0.5rem;
+    }
+    
+    .header-title p {
+        color: #6b7280;
+        margin-bottom: 2rem;
+    }
+
+    /* Grid de tarjetas */
+    #cards-wrap {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e5e7eb;
+      transition: transform 0.2s, box-shadow 0.2s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #374151;
+    }
+
+    .pct {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 5px;
+    }
+
+    .progress-bg {
+      background: #f3f4f6;
+      height: 8px;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .controls .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .btn-start { background-color: #2563eb; color: white; }
+    .btn-start:hover { background-color: #1d4ed8; }
+    
+    .btn-retry { background-color: white; border: 1px solid #d1d5db; color: #374151; }
+    .btn-retry:hover { background-color: #f9fafb; }
+
+    .advice-box {
+      background: #eff6ff;
+      border-left: 5px solid #3b82f6;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+    
+    .reset-link {
+        display: block;
+        margin-top: 20px;
+        color: #9ca3af;
+        text-align: center;
+        font-size: 0.85rem;
+        cursor: pointer;
+        text-decoration: underline;
+        background: none;
+        border: none;
+        width: 100%;
+    }
+
+    /* Asegurar que el menú desplegable se vea si el script externo falla */
+    .user-profile {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background: white;
+        border: 1px solid #eee;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        width: 200px;
+        flex-direction: column;
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .dropdown-menu.active {
+        display: flex;
+    }
+    .dropdown-menu a {
+        padding: 10px 15px;
+        text-decoration: none;
+        color: #333;
+        display: block;
+    }
+    .dropdown-menu a:hover {
+        background: #f3f4f6;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="dashboard-header">
+    <div class="logo">
+      <span class="logo-text" style="font-weight:800; font-size:1.5rem;">LUKXTEC</span>
+    </div>
+    <div class="user-actions">
+      <div class="user-profile" id="user-profile">
+        <span class="user-name" id="display-name">Usuario</span>
+        <div class="user-icon" style="background:#4f46e5; color:white; width:35px; height:35px; border-radius:50%; display:flex; align-items:center; justify-content:center;">👤</div>
+        
+        <div class="dropdown-menu" id="dropdown-menu">
+           <a href="mis-resultados-vocacional.html">Resultados Vocacional</a>
+           <a href="test-icfes.html" class="active">Resultados ICFES</a>
+           <a href="#" id="logout-btn">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    
+    <div class="header-title">
+        <a href="dashboard.html" style="text-decoration:none; color:#6b7280; font-size:0.9rem;">← Volver al Inicio</a>
+        <h1>Entrenamiento ICFES</h1>
+        <p>Selecciona una prueba para iniciar o revisa tu progreso acumulado.</p>
+    </div>
+
+    <div id="cards-wrap"></div>
+
+    <div class="advice-box">
+      <h3 style="color:#1e40af; margin-bottom:0.5rem;">Diagnóstico Académico</h3>
+      <p id="advice-text">Cargando resultados...</p>
+    </div>
+
+    <button id="reset-icfes" class="reset-link">Reiniciar todo mi progreso ICFES</button>
+
+  </main>
+  
+  <script src="../scripts/resultados-icfes.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- 1. LÓGICA DE USUARIO (ROBUSTA) ---
+        const nameDisplay = document.getElementById('display-name');
+        
+        // Leemos lo que haya en 'user' (puede ser texto o JSON)
+        const rawUser = localStorage.getItem('user');
+
+        if (rawUser) {
+            try {
+                // Intento 1: Asumimos que es JSON (ej: {"name":"test3"})
+                const userObj = JSON.parse(rawUser);
+                
+                if (userObj.name) {
+                    nameDisplay.textContent = userObj.name;
+                } else if (userObj.username) {
+                    nameDisplay.textContent = userObj.username;
+                } else {
+                    // Es un objeto pero no tiene name ni username, mostramos algo genérico
+                    nameDisplay.textContent = "Estudiante";
+                }
+            } catch (e) {
+                // Intento 2: Si falla el JSON, es texto plano (ej: "test3")
+                // Esto arregla el error cuando se guarda solo el nombre
+                nameDisplay.textContent = rawUser.replace(/"/g, ''); // Quita comillas si las hay
+            }
+        } else {
+            console.log("No hay usuario logueado en LocalStorage");
+        }
+
+        // --- 2. LÓGICA DEL MENÚ DESPLEGABLE ---
+        const profile = document.getElementById('user-profile');
+        const dropdown = document.getElementById('dropdown-menu');
+        const logoutBtn = document.getElementById('logout-btn');
+
+        if(profile && dropdown) {
+            profile.addEventListener('click', (e) => {
+                e.stopPropagation(); 
+                dropdown.classList.toggle('active');
+            });
+            
+            // Cerrar menú si clic afuera
+            document.addEventListener('click', () => {
+                dropdown.classList.remove('active');
+            });
+        }
+
+        // --- 3. CERRAR SESIÓN ---
+        if(logoutBtn) {
+            logoutBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                localStorage.removeItem('user'); 
+                localStorage.removeItem('token');
+                // Ajusta la ruta si es necesario (ej: ../index.html o login.html)
+                window.location.href = 'login.html'; 
+            });
+        }
+    });
+  </script>
+</body>
+</html>

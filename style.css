@@ -1,0 +1,1979 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.auth-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.auth-card h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.auth-card p {
+  color: #6b7280;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 24px 0;
+  text-align: center;
+}
+
+.divider span {
+  color: #9ca3af;
+  font-size: 14px;
+  padding: 0 12px;
+}
+
+.text-center {
+  text-align: center;
+  font-size: 14px;
+}
+
+.text-center a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+/* =============== DASHBOARD STYLES =============== */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.dashboard-header .logo img {
+  height: 28px;
+}
+
+/* ... (y así hasta la última regla) ... */
+
+.stat-card .label {
+  display: block;
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+/* =============== CORRECCIONES URGENTES PARA DASHBOARD =============== */
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.dashboard-main {
+  padding: 24px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero h1 .highlight {
+  color: #3b82f6;
+}
+
+.hero p {
+  color: #4b5563;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cta-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.cta-buttons .btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.cta-buttons .btn-outline {
+  background: transparent;
+  border: 2px solid #e5e7eb;
+  color: #1f2937;
+}
+
+.cta-buttons .btn-outline:hover {
+  background: #f9fafb;
+}
+
+.stats {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.stat-card .number {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.stat-card .label {
+  display: block;
+  font-size: 16px;
+  color: #6b7280;
+  margin-top: 8px;
+}
+/* =============== ÁREAS DE ESTUDIO =============== */
+
+.study-areas {
+  margin-top: 48px;
+}
+
+.study-areas h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.area-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  background: var(--bg);
+  border-radius: 16px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.area-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.area-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+}
+
+.area-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: white;
+}
+
+.area-card span {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+}
+/* =============== ÁREA DETALLE =============== */
+
+.area-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.area-header p {
+  color: #4b5563;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.unis-list h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.uni-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 16px;
+}
+
+.uni-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.uni-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.public { background: #dcfce7; color: #16a34a; }
+.badge.private { background: #fef3c7; color: #92400e; }
+
+.uni-details p {
+  color: #4b5563;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.uni-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tag {
+  background: #f3f4f6;
+  color: #4b5563;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.btn-primary-sm {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.btn-outline-sm {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+/* =============== UNIVERSIDAD DETALLE =============== */
+
+.uni-banner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.uni-meta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.uni-meta span {
+  background: #f3f4f6;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.uni-banner p {
+  color: #4b5563;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.filters {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 24px;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.carreras-count h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.legend {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.legend p {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.legend-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.legend-item span:first-child {
+  flex-shrink: 0;
+}
+
+.careers-list .career-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.career-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.career-header h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge.high { background: #fef3c7; color: #92400e; }
+.badge.medium { background: #e0f2fe; color: #0ea5e9; }
+.badge.low { background: #fee2e2; color: #dc2626; }
+
+.career-details p {
+  color: #4b5563;
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.score {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* =============== COLORES POR ÁREA =============== */
+
+.area-salud .area-header {
+  background: linear-gradient(135deg, #10b981, #047857);
+  color: white;
+}
+
+.area-arte .area-header {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+}
+
+.area-derecho .area-header {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.area-ingenieria .area-header {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+}
+
+.area-negocios .area-header {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+.area-tecnologia .area-header {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+}
+
+.area-header h1,
+.area-header p {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============== ÁREA HEADER — CENTRADO Y PROFESIONAL =============== */
+
+.area-header {
+  text-align: center;
+  padding: 48px 20px 32px;
+  border-radius: 16px 16px 0 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.area-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  z-index: -1;
+}
+
+.area-header h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.area-header p {
+  font-size: 18px;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Colores por área — con texto blanco si fondo es oscuro */
+.area-salud .area-header,
+.area-arte .area-header,
+.area-derecho .area-header,
+.area-ingenieria .area-header,
+.area-negocios .area-header,
+.area-tecnologia .area-header {
+  color: white;
+}
+
+/* Si en el futuro usas fondo claro, puedes sobrescribir con: */
+/* .area-x .area-header { color: #1f2937; } */
+
+/* Aseguramos que el texto siempre tenga buen contraste */
+.area-header h1,
+.area-header p {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Opcional: añadir ícono SVG pequeño encima del título (si quieres) */
+.area-header .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.area-header .icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+  fill: none;
+}
+
+/* Ícono en el banner */
+.area-header .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.area-header .icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: white;
+  fill: none;
+}
+/* =============== UNIVERSIDADES PÁGINA =============== */
+
+.stats-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.stat-grid {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.stat-item {
+  flex: 1;
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.stat-item .number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.stat-item .label {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.area-universidades .area-header {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+}
+/* ========================================
+   TEST ÚNICO - ESTILOS
+   ======================================== */
+
+#test-form {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.radio-group label:hover {
+  background: #f9fafb;
+  border-color: #6366f1;
+}
+
+.radio-group input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + span {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #4f46e5;
+}
+
+.btn-outline-sm {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* ========================================
+   RESULTADOS - ESTILOS
+   ======================================== */
+
+#recomendaciones-container,
+#planes-container {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  margin-bottom: 24px;
+}
+
+#recomendaciones-container h2,
+#planes-container h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 24px;
+}
+
+.area-section {
+  margin-bottom: 32px;
+}
+
+.area-section h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.recomendacion {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 16px;
+  border-left: 4px solid #6366f1;
+  transition: transform 0.2s;
+}
+
+.recomendacion:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.recomendacion h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.recomendacion p {
+  color: #4b5563;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.unis-links {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.unis-links a {
+  background: #6366f1;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.unis-links a:hover {
+  background: #4f46e5;
+  text-decoration: underline;
+}
+
+/* ========================================
+   PLANES DE TRABAJO - ESTILOS
+   ======================================== */
+
+.plan-card {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 2px solid #e5e7eb;
+  transition: border-color 0.3s;
+}
+
+.plan-card:hover {
+  border-color: #6366f1;
+}
+
+.plan-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.plan-progress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  transition: width 0.5s ease;
+}
+
+.plan-progress span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.plan-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-tareas li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.plan-tareas li:last-child {
+  border-bottom: none;
+}
+
+.plan-tareas input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.plan-tareas label {
+  font-size: 16px;
+  color: #4b5563;
+  cursor: pointer;
+}
+
+.plan-tareas input[type="checkbox"]:checked + label {
+  color: #16a34a;
+  text-decoration: line-through;
+}
+
+/* ========================================
+   COLORES POR ÁREA
+   ======================================== */
+
+/* Salud - Verde */
+.area-salud .area-header {
+  background: linear-gradient(135deg, #10b981, #047857);
+  color: white;
+}
+
+/* Arte - Violeta */
+.area-arte .area-header {
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+  color: white;
+}
+
+/* Derecho - Rojo */
+.area-derecho .area-header {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+/* Ingeniería - Azul */
+.area-ingenieria .area-header {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+}
+
+/* Negocios - Naranja */
+.area-negocios .area-header {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+}
+
+/* Tecnología - Índigo */
+.area-tecnologia .area-header {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+}
+
+/* Universidades - Azul claro */
+.area-universidades .area-header {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  color: white;
+}
+
+/* Ícono en banner */
+.area-header .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  margin: 0 auto 24px;
+}
+
+.area-header .icon svg {
+  width: 32px;
+  height: 32px;
+  stroke: white;
+  fill: none;
+}
+
+/* ========================================
+   BOTONES DE NAVEGACIÓN
+   ======================================== */
+
+.back-button {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.back-button .btn-outline {
+  display: inline-block;
+  padding: 14px 32px;
+  background: white;
+  color: #1f2937;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.back-button .btn-outline:hover {
+  background: #f9fafb;
+  border-color: #6366f1;
+  color: #6366f1;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .area-header h1 {
+    font-size: 28px;
+  }
+
+  .area-header p {
+    font-size: 16px;
+  }
+
+  .radio-group {
+    flex-direction: column;
+  }
+
+  .unis-links {
+    flex-direction: column;
+  }
+
+  .unis-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ========================================
+   ESTILOS PARA TESTS ICFES
+   ======================================== */
+
+/* Formulario de tests ICFES */
+#icfes-form {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#icfes-form .form-group {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+#icfes-form .form-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#icfes-form p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+#icfes-form .radio-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+#icfes-form .radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #f9fafb;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+#icfes-form .radio-group label:hover {
+  background: #f3f4f6;
+  border-color: #6366f1;
+  transform: translateX(4px);
+}
+
+#icfes-form .radio-group input[type="radio"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: #6366f1;
+}
+
+#icfes-form .radio-group input[type="radio"]:checked + span {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+#icfes-form .radio-group input[type="radio"]:checked {
+  accent-color: #6366f1;
+}
+
+#icfes-form .btn-primary {
+  width: 100%;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  padding: 18px;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+  margin-top: 16px;
+}
+
+#icfes-form .btn-primary:hover {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+#icfes-form .btn-primary:active {
+  transform: translateY(0);
+}
+
+/* ========================================
+   BOTONES DE PRUEBA EN PLAN ICFES
+   ======================================== */
+
+.btn-test {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 16px;
+  transition: all 0.25s ease;
+  border: 2px solid #059669;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.2);
+}
+
+.btn-test:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  text-decoration: none;
+}
+
+.btn-test:active {
+  transform: translateY(1px);
+}
+
+/* Estilo para tareas completadas */
+.plan-tareas li input[type="checkbox"]:checked + span {
+  color: #16a34a;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+
+.plan-tareas li input[type="checkbox"]:checked ~ .btn-test {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  border-color: #4b5563;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.plan-tareas li input[type="checkbox"]:checked ~ .btn-test:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* ========================================
+   PLANES DE TRABAJO - MEJORAS
+   ======================================== */
+
+.plan-card {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 28px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  box-shadow: 0 6px 25px rgba(0,0,0,0.08);
+  border-color: #6366f1;
+}
+
+.plan-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.plan-card h3::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 28px;
+  background: #6366f1;
+  border-radius: 4px;
+}
+
+.plan-progress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding: 12px;
+  background: #f9fafb;
+  border-radius: 12px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 14px;
+  background: #e5e7eb;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  border-radius: 7px;
+  transition: width 0.6s ease;
+}
+
+.plan-progress span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  min-width: 100px;
+  text-align: right;
+}
+
+.plan-tareas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-tareas li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 16px 0;
+  border-bottom: 1px solid #f3f4f6;
+  flex-wrap: wrap;
+}
+
+.plan-tareas li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.plan-tareas li input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #6366f1;
+  margin-top: 4px;
+}
+
+.plan-tareas li span {
+  flex: 1;
+  min-width: 250px;
+  font-size: 16px;
+  color: #4b5563;
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+/* ========================================
+   ESTILOS PARA FEEDBACK DE TESTS
+   ======================================== */
+
+/* Estilo para alertas (simulado con CSS) */
+.feedback-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.feedback-error {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(239, 68, 68, 0.3);
+}
+
+/* ========================================
+   RESPONSIVE PARA TESTS
+   ======================================== */
+
+@media (max-width: 768px) {
+  #icfes-form {
+    padding: 24px;
+  }
+
+  #icfes-form p {
+    font-size: 16px;
+  }
+
+  .plan-tareas li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .plan-tareas li .btn-test {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .plan-progress {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .plan-progress span {
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* ========================================
+   ICONOS EN BANNERS DE TESTS
+   ======================================== */
+
+.area-header .icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 20px;
+  margin: 0 auto 28px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.area-header .icon svg {
+  width: 36px;
+  height: 36px;
+  stroke: white;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Efecto hover en botones de navegación */
+.btn-outline-sm {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: white;
+  color: #6366f1;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-outline-sm:hover {
+  background: #f9fafb;
+  border-color: #6366f1;
+  color: #4f46e5;
+  transform: translateX(-4px);
+}
+
+/* ========================================
+   ESTADO DE TAREAS COMPLETADAS
+   ======================================== */
+
+.plan-tareas li.completed {
+  opacity: 0.85;
+}
+
+.plan-tareas li.completed span {
+  color: #6b7280;
+}
+
+.plan-tareas li.completed .btn-test {
+  background: #9ca3af;
+  border-color: #6b7280;
+  cursor: not-allowed;
+}
+
+/* Estilos para autenticación */
+.auth-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.auth-card .form-group {
+  margin-bottom: 24px;
+}
+
+.auth-card label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.25s;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.error-message {
+  background: #fee2e2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  display: none;
+}
+
+.error-message:empty {
+  display: none;
+}
+
+.error-message:not(:empty) {
+  display: block;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 24px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #e5e7eb;
+}
+
+.divider span {
+  padding: 0 16px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.text-center a {
+  color: #6366f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-center a:hover {
+  text-decoration: underline;
+}
+
+/* Menú de usuario */
+.user-profile {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: relative;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.user-profile:hover {
+  background: #f3f4f6;
+}
+
+.user-name {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 16px;
+}
+
+.user-icon {
+  width: 36px;
+  height: 36px;
+  background: #6366f1;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 100;
+  min-width: 220px;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+  background: #f3f4f6;
+  color: #1f2937;
+}
+
+.dropdown-menu a:last-child {
+  color: #dc2626;
+}
+
+.dropdown-menu a:last-child:hover {
+  color: #b91c1c;
+}
+
+/* Resultados guardados */
+.results-section {
+  padding: 40px 20px;
+  background: #f9fafb;
+}
+
+.results-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  color: #1f2937;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#no-results {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  grid-column: 1 / -1;
+}
+
+.result-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.result-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+}
+
+.result-header h3 {
+  margin: 0;
+  color: #1f2937;
+  font-size: 18px;
+}
+
+.compatibilidad {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.result-body {
+  padding: 24px;
+}
+
+.result-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.result-body ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+}
+
+.result-body ul li:before {
+  content: "✓";
+  color: #10b981;
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.carreras-list li:before {
+  content: "🎓";
+  color: #6366f1;
+}
+
+.universities-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-outline-sm {
+  display: inline-block;
+  padding: 8px 16px;
+  background: transparent;
+  color: #6366f1;
+  border: 2px solid #6366f1;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-outline-sm:hover {
+  background: #6366f1;
+  color: white;
+}
+
+/* ========== MIS RESULTADOS VOCACIONAL ========== */
+.results-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#no-results {
+  text-align: center;
+  color: #6b7280;
+  font-style: italic;
+  font-size: 18px;
+  padding: 40px;
+  background: #f9fafb;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
+/* Tarjetas de resultados */
+.result-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  margin-bottom: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 2px solid #e5e7eb;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  border-color: #6366f1;
+}
+
+.result-header {
+  padding: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+}
+
+.result-header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.compatibilidad {
+  background: rgba(255,255,255,0.2);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.result-body {
+  padding: 24px;
+}
+
+.result-body h4, .result-body h5 {
+  color: #1f2937;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.result-body h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.result-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.result-body ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #4b5563;
+}
+
+.result-body ul li:before {
+  content: "✓";
+  color: #10b981;
+  margin-right: 12px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.areas-list li:before {
+  content: "📊";
+  color: #6366f1;
+}
+
+.carreras-list li:before {
+  content: "🎓";
+  color: #8b5cf6;
+}
+
+.universities-links {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-area {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.3);
+}
+
+.btn-area:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(99, 102, 241, 0.4);
+  background: linear-gradient(135deg, #8b5cf6 0%, #a78bfa 100%);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .results-container {
+    padding: 20px 10px;
+  }
+  
+  .result-card {
+    margin-bottom: 16px;
+  }
+  
+  .result-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .universities-links {
+    flex-direction: column;
+  }
+  
+  .btn-area {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Agregar al final de tu style.css */
+
+/* ========================================
+   AJUSTES DASHBOARD SIN TARJETAS
+   ======================================== */
+
+/* Asegurar que el hero tenga buen espaciado */
+.dashboard-main .hero {
+  margin-bottom: 60px;
+}
+
+/* Mejorar espaciado de stats */
+.dashboard-main .stats {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Asegurar que study-areas tenga buen espaciado */
+.dashboard-main .study-areas {
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* ========================================
+   MENÚ DESPLEGABLE MEJORADO
+   ======================================== */
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 100;
+  min-width: 240px;
+  margin-top: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.dropdown-menu a:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+  background: #f9fafb;
+  color: #1f2937;
+  padding-left: 24px;
+}
+
+.dropdown-menu a:last-child {
+  color: #dc2626;
+}
+
+.dropdown-menu a:last-child:hover {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Animación suave para el dropdown */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu[style*="display: block"] {
+  animation: slideDown 0.2s ease-out;
+}

@@ -1,0 +1,224 @@
+<!-- pages/universidad-icesi.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Universidad ICESI | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="dashboard-header">
+  <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+  
+  <div class="user-actions">
+    <!-- Botón de inicio (solo para dashboard) -->
+    <a href="../pages/dashboard.html" class="btn-outline-sm">← Inicio</a>
+    
+    <!-- Menú de usuario (se muestra solo cuando está logueado) -->
+    <div class="user-profile" id="user-profile">
+      <span class="user-name" id="user-name">Usuario</span>
+      <div class="user-icon" id="user-icon">👤</div>
+      
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a href="../pages/mis-resultados-vocacional.html">Resultados Vocacional</a>
+        <a href="../pages/mis-resultados-icfes.html">Resultados ICFES</a>
+        <a href="#" id="logout">Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+</header>
+  <main class="dashboard-main">
+    <section class="uni-banner">
+      <h1>Universidad ICESI</h1>
+      <div class="uni-meta">
+        <span>📍 Cali</span>
+        <span>🎓 Privada</span>
+        <span>📌 Región: Pacífico</span>
+      </div>
+      <p>Institución católica con acreditación internacional, líder en formación ética, investigación aplicada y vinculación con el sector productivo en Colombia.</p>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group">
+        <label>Buscar carrera</label>
+        <input type="text" placeholder="Nombre de carrera o facultad..." />
+      </div>
+      <div class="filter-group">
+        <label>Nivel</label>
+        <select>
+          <option>Todos los niveles</option>
+          <option>Pregrado</option>
+          <option>Especialización</option>
+          <option>Maestría</option>
+          <option>Doctorado</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Modalidad</label>
+        <select>
+          <option>Todas las modalidades</option>
+          <option>Presencial</option>
+          <option>Virtual</option>
+          <option>Híbrida</option>
+        </select>
+      </div>
+      <button class="btn-outline">Limpiar filtros</button>
+    </section>
+
+    <section class="carreras-count">
+      <h2>Carreras Disponibles</h2>
+      <div class="stat-card">
+        <span class="number">45+</span>
+        <span class="label">Programas académicos en esta universidad</span>
+      </div>
+    </section>
+
+    <section class="legend">
+      <p><strong>¿Qué significan "Alta", "Media" y "Baja"?</strong></p>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="badge high">Alta</span>
+          <span>Puntaje ICFES ≥ 380 — Muy competitivo</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge medium">Media</span>
+          <span>Puntaje ICFES 350–379 — Competitivo moderado</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge low">Baja</span>
+          <span>Puntaje ICFES ≤ 349 — Accesible</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="careers-list">
+      <!-- Carrera 1 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Derecho</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Derecho y Ciencias Sociales</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">405</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 2 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Ingeniería Mecánica</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ingeniería</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">395</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 3 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Contaduría Pública</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ciencias Administrativas y Económicas</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">385</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 4 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Administración</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ciencias Administrativas y Económicas</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">390</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 5 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Ingeniería Industrial</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ingeniería</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">380</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 6 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Psicología</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ciencias Naturales y Exactas</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">370</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 7 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Comunicación Social</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ciencias Administrativas y Económicas</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">365</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 8 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Ingeniería de Sistemas</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Ingeniería</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">400</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="back-button">
+      <a href="../pages/dashboard.html" class="btn-outline">← Volver a inicio</a>
+    </div>
+  </main>
+  <script src="../scripts/universidad.js" defer></script>
+  <script src="../scripts/user-menu.js" defer></script>
+</body>
+</html>

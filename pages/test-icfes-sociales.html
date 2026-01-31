@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test ICFES - Sociales y Ciudadanas | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="area-derecho" data-test="sociales">
+
+  <header class="dashboard-header">
+    <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+    <div class="user-actions">
+      <a href="test-icfes.html" class="btn-outline-sm">← Volver</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="area-header">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12.7 5.16-1.96 9-7.15 9-12.7V7z"/>
+          <line x1="12" y1="12" x2="12" y2="18"/>
+          <line x1="12" y1="12" x2="16" y2="10"/>
+          <line x1="12" y1="12" x2="8" y2="10"/>
+        </svg>
+      </div>
+      <h1>Test ICFES - Sociales y Ciudadanas</h1>
+      <p>5 preguntas para evaluar tu conocimiento social.</p>
+    </section>
+
+    <form id="icfes-form">
+      <div class="form-group">
+        <p>1. ¿Quién fue el libertador de Colombia?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q1" value="0"> Simón Bolívar</label>
+          <label><input type="radio" name="q1" value="1"> José de San Martín</label>
+          <label><input type="radio" name="q1" value="2"> Miguel Hidalgo</label>
+          <label><input type="radio" name="q1" value="3"> Bernardo O'Higgins</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>2. ¿Cuál es la capital de Colombia?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q2" value="0"> Medellín</label>
+          <label><input type="radio" name="q2" value="1"> Cali</label>
+          <label><input type="radio" name="q2" value="2"> Bogotá</label>
+          <label><input type="radio" name="q2" value="3"> Barranquilla</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>3. ¿En qué año se declaró la independencia de Colombia?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q3" value="0"> 1810</label>
+          <label><input type="radio" name="q3" value="1"> 1819</label>
+          <label><input type="radio" name="q3" value="2"> 1821</label>
+          <label><input type="radio" name="q3" value="3"> 1830</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>4. ¿Qué es la democracia?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q4" value="0"> Gobierno del pueblo</label>
+          <label><input type="radio" name="q4" value="1"> Gobierno de uno</label>
+          <label><input type="radio" name="q4" value="2"> Gobierno de pocos</label>
+          <label><input type="radio" name="q4" value="3"> Gobierno militar</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <p>5. ¿Qué es la Constitución?</p>
+        <div class="radio-group">
+          <label><input type="radio" name="q5" value="0"> Ley fundamental</label>
+          <label><input type="radio" name="q5" value="1"> Ley secundaria</label>
+          <label><input type="radio" name="q5" value="2"> Ley temporal</label>
+          <label><input type="radio" name="q5" value="3"> Ley opcional</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar Respuestas</button>
+    </form>
+  </main>
+
+  <script src="../scripts/test-icfes.js"></script>
+</body>
+</html>

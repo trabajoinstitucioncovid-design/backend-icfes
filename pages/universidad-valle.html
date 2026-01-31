@@ -1,0 +1,266 @@
+<!-- pages/universidad-valle.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Universidad del Valle | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Header común -->
+  <header class="dashboard-header">
+  <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+  
+  <div class="user-actions">
+    <!-- Botón de inicio (solo para dashboard) -->
+    <a href="../pages/dashboard.html" class="btn-outline-sm">← Inicio</a>
+    
+    <!-- Menú de usuario (se muestra solo cuando está logueado) -->
+    <div class="user-profile" id="user-profile">
+      <span class="user-name" id="user-name">Usuario</span>
+      <div class="user-icon" id="user-icon">👤</div>
+      
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a href="../pages/mis-resultados-vocacional.html">Resultados Vocacional</a>
+        <a href="../pages/mis-resultados-icfes.html">Resultados ICFES</a>
+        <a href="#" id="logout">Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="dashboard-main">
+    <!-- Banner de la universidad -->
+    <section class="uni-banner">
+      <h1>Universidad del Valle</h1>
+      <div class="uni-meta">
+        <span>📍 Cali</span>
+        <span>🎓 Pública</span>
+        <span>📌 Región: Pacífico</span>
+      </div>
+      <p>La Universidad del Valle es una institución líder en educación superior del suroccidente colombiano, reconocida por su excelencia académica e investigación en ciencias, ingeniería y salud.</p>
+    </section>
+
+    <!-- Filtros -->
+    <section class="filters">
+      <div class="filter-group">
+        <label>Buscar carrera</label>
+        <input type="text" placeholder="Nombre de carrera o facultad..." />
+      </div>
+
+      <div class="filter-group">
+        <label>Nivel</label>
+        <select>
+          <option>Todos los niveles</option>
+          <option>Pregrado</option>
+          <option>Especialización</option>
+          <option>Maestría</option>
+          <option>Doctorado</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>Modalidad</label>
+        <select>
+          <option>Todas las modalidades</option>
+          <option>Presencial</option>
+          <option>Virtual</option>
+          <option>Híbrida</option>
+        </select>
+      </div>
+
+      <button class="btn-outline">Limpiar filtros</button>
+    </section>
+
+    <!-- Contador de carreras -->
+    <section class="carreras-count">
+      <h2>Carreras Disponibles</h2>
+      <div class="stat-card">
+        <span class="number">54</span>
+        <span class="label">Programas académicos en esta universidad</span>
+      </div>
+    </section>
+
+    <!-- Leyenda de etiquetas (¡nuevo!) -->
+    <section class="legend">
+      <p><strong>¿Qué significan "Alta", "Media" y "Baja"?</strong></p>
+      <div class="legend-items">
+        <div class="legend-item">
+          <span class="badge high">Alta</span>
+          <span>Puntaje ICFES ≥ 380 — Muy competitivo</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge medium">Media</span>
+          <span>Puntaje ICFES 350–379 — Competitivo moderado</span>
+        </div>
+        <div class="legend-item">
+          <span class="badge low">Baja</span>
+          <span>Puntaje ICFES ≤ 349 — Accesible</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listado de 10 carreras reales -->
+    <section class="careers-list">
+      <!-- Carrera 1 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Medicina</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Salud</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">380</span></p>
+          <p><strong>Duración:</strong> 6 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 2 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Ingeniería Eléctrica</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ingeniería</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">370</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 3 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Administración</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ciencias Económicas y Empresariales</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">360</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 4 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Psicología</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ciencias Sociales</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">390</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 5 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Ingeniería de Sistemas</h3>
+          <span class="badge high">Alta</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ingeniería</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">400</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 6 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Derecho</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Derecho y Ciencias Políticas</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">385</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 7 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Química</h3>
+          <span class="badge low">Baja</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ciencias</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">340</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 8 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Enfermería</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Salud</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">350</span></p>
+          <p><strong>Duración:</strong> 4 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 9 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Antropología</h3>
+          <span class="badge low">Baja</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ciencias Sociales</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">330</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+
+      <!-- Carrera 10 -->
+      <div class="career-item">
+        <div class="career-header">
+          <h3>Economía</h3>
+          <span class="badge medium">Media</span>
+        </div>
+        <div class="career-details">
+          <p><strong>Facultad:</strong> Facultad de Ciencias Económicas y Empresariales</p>
+          <p><strong>Puntaje mínimo ICFES:</strong> <span class="score">375</span></p>
+          <p><strong>Duración:</strong> 5 años</p>
+          <p><strong>Modalidad:</strong> Presencial</p>
+          <p><strong>Nivel:</strong> Pregrado</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botón de retorno -->
+    <div class="back-button">
+      <a href="../pages/dashboard.html" class="btn-outline">← Volver a inicio</a>
+    </div>
+  </main>
+
+  <script src="../scripts/universidad.js" defer></script>
+  <script src="../scripts/user-menu.js" defer></script>
+</body>
+</html>

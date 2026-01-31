@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Test Vocacional | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="area-tecnologia">
+  <header class="dashboard-header">
+    <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+    <div class="user-actions">
+      <a href="../pages/dashboard.html" class="btn-outline-sm">← Inicio</a>
+      <div class="user-profile" id="user-profile">
+        <span class="user-name" id="user-name">Usuario</span>
+        <div class="user-icon" id="user-icon">👤</div>
+        <div class="dropdown-menu" id="dropdown-menu">
+          <a href="../pages/mis-resultados-vocacional.html">Resultados Vocacional</a>
+        <a href="../pages/mis-resultados-icfes.html">Resultados ICFES</a>
+        <a href="#" id="logout">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <section class="area-header">
+      <h1>Test Vocacional</h1>
+      <p>Responde estas preguntas para descubrir tus áreas de interés.</p>
+    </section>
+
+    <!-- Formulario del test -->
+    <div class="auth-card" id="test-form-container">
+      <form id="vocacional-form">
+        <div class="form-group">
+          <label>Pregunta 1: ¿Disfrutas crear diseños o arte?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q1" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q1" value="2"> 2</label>
+            <label><input type="radio" name="q1" value="3"> 3</label>
+            <label><input type="radio" name="q1" value="4"> 4</label>
+            <label><input type="radio" name="q1" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 2: ¿Te gusta resolver problemas matemáticos?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q2" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q2" value="2"> 2</label>
+            <label><input type="radio" name="q2" value="3"> 3</label>
+            <label><input type="radio" name="q2" value="4"> 4</label>
+            <label><input type="radio" name="q2" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 3: ¿Te interesa ayudar a las personas?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q3" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q3" value="2"> 2</label>
+            <label><input type="radio" name="q3" value="3"> 3</label>
+            <label><input type="radio" name="q3" value="4"> 4</label>
+            <label><input type="radio" name="q3" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 4: ¿Disfrutas construir o arreglar cosas?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q4" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q4" value="2"> 2</label>
+            <label><input type="radio" name="q4" value="3"> 3</label>
+            <label><input type="radio" name="q4" value="4"> 4</label>
+            <label><input type="radio" name="q4" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 5: ¿Te gusta defender causas o discutir temas sociales?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q5" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q5" value="2"> 2</label>
+            <label><input type="radio" name="q5" value="3"> 3</label>
+            <label><input type="radio" name="q5" value="4"> 4</label>
+            <label><input type="radio" name="q5" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 6: ¿Te interesa el mundo de los negocios?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q6" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q6" value="2"> 2</label>
+            <label><input type="radio" name="q6" value="3"> 3</label>
+            <label><input type="radio" name="q6" value="4"> 4</label>
+            <label><input type="radio" name="q6" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 7: ¿Disfrutas analizar datos o patrones?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q7" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q7" value="2"> 2</label>
+            <label><input type="radio" name="q7" value="3"> 3</label>
+            <label><input type="radio" name="q7" value="4"> 4</label>
+            <label><input type="radio" name="q7" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 8: ¿Te gusta leer o escribir?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q8" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q8" value="2"> 2</label>
+            <label><input type="radio" name="q8" value="3"> 3</label>
+            <label><input type="radio" name="q8" value="4"> 4</label>
+            <label><input type="radio" name="q8" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 9: ¿Te interesa la ciencia y la naturaleza?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q9" value="1" required> 1 - No</label>
+            <label><input type="radio" name="q9" value="2"> 2</label>
+            <label><input type="radio" name="q9" value="3"> 3</label>
+            <label><input type="radio" name="q9" value="4"> 4</label>
+            <label><input type="radio" name="q9" value="5"> 5 - Sí</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Pregunta 10: ¿Prefieres trabajar con personas o con máquinas?</label>
+          <div class="radio-group">
+            <label><input type="radio" name="q10" value="1" required> 1 - Con máquinas</label>
+            <label><input type="radio" name="q10" value="2"> 2</label>
+            <label><input type="radio" name="q10" value="3"> 3</label>
+            <label><input type="radio" name="q10" value="4"> 4</label>
+            <label><input type="radio" name="q10" value="5"> 5 - Con personas</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary">Enviar Cuestionario</button>
+      </form>
+    </div>
+
+    <!-- Resultados (inicialmente oculto) -->
+    <div class="card" id="resultados-container" style="display: none;">
+      <h2>Tus Resultados</h2>
+      <div id="recomendaciones"></div>
+      <button id="repetir-test" class="btn-primary">Presentar de Nuevo</button>
+    </div>
+  </main>
+
+  <script src="../scripts/user-menu.js" defer></script>
+  <script src="../scripts/test-vocacional.js"></script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!-- pages/universities.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Universidades de Colombia | LUKXTEC</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="area-universidades">
+  <!-- Header común -->
+  <header class="dashboard-header">
+  <div class="logo"><span class="logo-text">LUKXTEC</span></div>
+  
+  <div class="user-actions">
+    <!-- Botón de inicio (solo para dashboard) -->
+    <a href="../pages/dashboard.html" class="btn-outline-sm">← Inicio</a>
+    
+    <!-- Menú de usuario (se muestra solo cuando está logueado) -->
+    <div class="user-profile" id="user-profile">
+      <span class="user-name" id="user-name">Usuario</span>
+      <div class="user-icon" id="user-icon">👤</div>
+      
+      <div class="dropdown-menu" id="dropdown-menu">
+        <a href="../pages/mis-resultados-vocacional.html">Resultados Vocacional</a>
+        <a href="../pages/mis-resultados-icfes.html">Resultados ICFES</a>
+        <a href="#" id="logout">Cerrar sesión</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="dashboard-main">
+    <!-- Banner principal -->
+    <section class="area-header">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+          <polyline points="9 22 9 12 15 12 15 22"/>
+        </svg>
+      </div>
+      <h1>Universidades de Colombia</h1>
+      <p>Explora las instituciones educativas más destacadas del país, con información detallada sobre sus programas académicos.</p>
+    </section>
+
+    <!-- Estadísticas generales -->
+    <section class="stats-section">
+      <h2>Estadísticas Generales</h2>
+      <div class="stat-card">
+        <span class="number">10</span>
+        <span class="label">Universidades en nuestra base de datos</span>
+      </div>
+      <div class="stat-grid">
+        <div class="stat-item">
+          <span class="number">3</span>
+          <span class="label">Públicas</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">7</span>
+          <span class="label">Privadas</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universidades Públicas -->
+    <section class="unis-list">
+      <h2>Universidades Públicas</h2>
+      
+      <!-- Universidad Nacional -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad Nacional de Colombia</h3>
+          <span class="badge public">Pública</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Bogotá</p>
+          <p>🎓 Fundada en 1867</p>
+          <p>📚 120+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-nacional.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- Universidad de Antioquia -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad de Antioquia</h3>
+          <span class="badge public">Pública</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Medellín</p>
+          <p>🎓 Fundada en 1803</p>
+          <p>📚 95+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-antioquia.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- Universidad del Valle -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad del Valle</h3>
+          <span class="badge public">Pública</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Cali</p>
+          <p>🎓 Fundada en 1945</p>
+          <p>📚 90+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-valle.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Universidades Privadas -->
+    <section class="unis-list">
+      <h2>Universidades Privadas</h2>
+      
+      <!-- Javeriana -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Pontificia Universidad Javeriana</h3>
+          <span class="badge private">Privada</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Bogotá</p>
+          <p>🎓 Fundada en 1930</p>
+          <p>📚 65+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-javeriana.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- Universidad de los Andes -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad de los Andes</h3>
+          <span class="badge private">Privada</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Bogotá</p>
+          <p>🎓 Fundada en 1948</p>
+          <p>📚 70+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-andes.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- EAFIT -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad EAFIT</h3>
+          <span class="badge private">Privada</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Medellín</p>
+          <p>🎓 Fundada en 1960</p>
+          <p>📚 50+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-eafit.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- ICESI -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad ICESI</h3>
+          <span class="badge private">Privada</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Cali</p>
+          <p>🎓 Fundada en 1970</p>
+          <p>📚 45+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-icesi.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+
+      <!-- Universidad del Norte -->
+      <div class="uni-item">
+        <div class="uni-header">
+          <h3>Universidad del Norte</h3>
+          <span class="badge private">Privada</span>
+        </div>
+        <div class="uni-details">
+          <p>📍 Barranquilla</p>
+          <p>🎓 Fundada en 1966</p>
+          <p>📚 55+ programas</p>
+        </div>
+        <div class="uni-actions">
+          <a href="../pages/universidad-norte.html" class="btn-primary-sm">Ver Universidad</a>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Botón volver -->
+    <div class="back-button">
+      <a href="../pages/dashboard.html" class="btn-outline">← Volver al inicio</a>
+    </div>
+  </main>
+
+  <script src="../scripts/universities.js" defer></script>
+  <script src="../scripts/user-menu.js" defer></script>
+</body>
+</html>
